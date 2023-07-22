@@ -1,11 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from "react-native";
+import ViewBoxesWithColorAndText from "./components/ViewBoxesWithColorAndText";
+import Counter from "./components/Counter";
+import MyInput from './components/MyInput';
+import IncrementCounter from "./components/IncrementCounter";
+import Form from "./components/Form";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>React Native!!!</Text>
-      <StatusBar style="auto" />
+    <View style = {styles.container}>
+      {/* <Counter/> */}
+      {/* <MyInput/> */}
+      {/* <IncrementCounter/> */}
+      <Form/>
     </View>
   );
 }
@@ -13,8 +19,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    // justifyContent: "center",
+    alignItems: "center"
+  }
+})
