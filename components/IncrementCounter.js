@@ -14,7 +14,10 @@ const IncrementCounter = () => {
         <Text style={{fontSize:24,fontStyle:'bold'}}>Your age: {age}</Text>
         <Text>{"\n\n"}</Text>
         <Button title='+3'onPress={()=>{
-            setAge(age+3);
+            for (let i = 1; i <= 3; i++){
+                increment(age+1)
+            }
+            // setAge(age+3);
         }}/>
             <Text>{"\n"}</Text>
         <Button title='+1'onPress={()=>{
