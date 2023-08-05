@@ -5,15 +5,17 @@ import MyInput from './components/MyInput';
 import IncrementCounter from "./components/IncrementCounter";
 import Form from "./components/Form";
 import Login from "./components/Login";
+import TouchablePractice from "./components/TouchablePractice";
 
 export default function App() {
   return (
-    <View style = {styles.container}>
+    <View style = {{flex: 1}}>
       {/* <Counter/> */}
       {/* <MyInput/> */}
       {/* <IncrementCounter/> */}
       {/* <Form/> */}
-      <Login/>
+      {/* <Login/> */}
+      <TouchablePractice/>
     </View>
   );
 }
