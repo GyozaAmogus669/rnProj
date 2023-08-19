@@ -8,6 +8,7 @@ import ExampleEffect from "./components/ExampleEffect";
 // import Login from "./components/Login";
 // import TouchablePractice from "./components/TouchablePractice";
 import UseEffectFlatList from "./components/UseEffectFlatList";
+import RandomUsersScreen from "./components/RandomUsersScreen";
 
 export default function App() {
   return (
@@ -19,7 +20,8 @@ export default function App() {
       {/* <Login/> */}
       {/* <TouchablePractice/> */}
       {/* <ExampleEffect/> */}
-      <UseEffectFlatList/>
+      {/* <UseEffectFlatList/> */}
+      <RandomUsersScreen/>
     </View>
   );
 }
