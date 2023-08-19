@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import ExampleEffect from "./components/ExampleEffect";
+// import ExampleEffect from "./components/ExampleEffect";
 // import ViewBoxesWithColorAndText from "./components/ViewBoxesWithColorAndText";
 // import Counter from "./components/Counter";
 // import MyInput from './components/MyInput';
@@ -7,8 +7,10 @@ import ExampleEffect from "./components/ExampleEffect";
 // import Form from "./components/Form";
 // import Login from "./components/Login";
 // import TouchablePractice from "./components/TouchablePractice";
-import UseEffectFlatList from "./components/UseEffectFlatList";
-import RandomUsersScreen from "./components/RandomUsersScreen";
+// import UseEffectFlatList from "./components/UseEffectFlatList";
+// import RandomUsersScreen from "./components/RandomUsersScreen";
+import FlatList_Example1 from "./components/FlatList_Example1";
+import FlatList_HeaderFooter from "./components/FlatList_HeaderFooter";
 
 export default function App() {
   return (
@@ -21,7 +23,9 @@ export default function App() {
       {/* <TouchablePractice/> */}
       {/* <ExampleEffect/> */}
       {/* <UseEffectFlatList/> */}
-      <RandomUsersScreen/>
+      {/* <RandomUsersScreen/> */}
+      {/* <FlatList_Example1/> */}
+      <FlatList_HeaderFooter/>
     </View>
   );
 }
