@@ -1,39 +1,21 @@
-import { StyleSheet, Text, View } from "react-native";
-// import ExampleEffect from "./components/ExampleEffect";
-// import ViewBoxesWithColorAndText from "./components/ViewBoxesWithColorAndText";
-// import Counter from "./components/Counter";
-// import MyInput from './components/MyInput';
-// import IncrementCounter from "./components/IncrementCounter";
-// import Form from "./components/Form";
-// import Login from "./components/Login";
-// import TouchablePractice from "./components/TouchablePractice";
-// import UseEffectFlatList from "./components/UseEffectFlatList";
-// import RandomUsersScreen from "./components/RandomUsersScreen";
-import FlatList_Example1 from "./components/FlatList_Example1";
-import FlatList_HeaderFooter from "./components/FlatList_HeaderFooter";
+import {Text, View } from "react-native";
+import React from 'react'
+import {NavigationContainer} from '@react-navigation/native'
+import {createNativeStackNavigator} from '@react-navigation/native-stack'
+import Home from './Screens/HomeScreen'
+import Details from './Screens/DetailScreen'
 
-export default function App() {
+const Stack = createNativeStackNavigator();
+
+const App = () => {
   return (
-    <View style = {{flex: 1}}>
-      {/* <Counter/> */}
-      {/* <MyInput/> */}
-      {/* <IncrementCounter/> */}
-      {/* <Form/> */}
-      {/* <Login/> */}
-      {/* <TouchablePractice/> */}
-      {/* <ExampleEffect/> */}
-      {/* <UseEffectFlatList/> */}
-      {/* <RandomUsersScreen/> */}
-      {/* <FlatList_Example1/> */}
-      <FlatList_HeaderFooter/>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name='Home' component={Home} options={{ title: 'Overview'}} />
+        <Stack.Screen name='Detail' component={Details}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    // justifyContent: "center",
-    alignItems: "center"
-  }
-})
+export default App
